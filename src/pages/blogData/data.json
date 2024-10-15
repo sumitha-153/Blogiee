@@ -1,0 +1,104 @@
+
+
+[
+    {
+        "id": 1,
+        "title": "Understanding JavaScript Closures",
+        "author": "Jane Doe",
+        "date": "2023-10-01",
+        "content": "A closure is a feature in JavaScript where an inner function has access to the outer (enclosing) function's variables. A closure allows a function to access variables from an enclosing scope, even after the outer function has finished executing.",
+        "tags": ["JavaScript", "Programming", "Closures"],
+        "profileImage": "https://media.istockphoto.com/id/1488919446/photo/working-from-home-in-downtown-los-angeles.webp?a=1&b=1&s=612x612&w=0&k=20&c=AcGE64i6FDIXxIfQsxdY2D8Ahv5lHFy93zF6MSo7a7I=",
+        "blogImage": "https://example.com/blogs/js_closures.jpg"
+    },
+    {
+        "id": 2,
+        "title": "A Guide to Responsive Web Design",
+        "author": "John Smith",
+        "date": "2023-09-25",
+        "content": "Responsive web design is essential in today's multi-device world. By using fluid grids, flexible images, and media queries, you can create web pages that provide a great user experience on any device. Remember to follow best practices like mobile-first design and regular testing to ensure your site is truly responsive.By mastering responsive web design, you can ensure your websites are accessible and user-friendly, no matter how your audience accesses them..",
+        "tags": ["Web Design", "CSS", "Responsive"],
+        "profileImage": "https://subscribed.fyi/wp-content/uploads/2023/11/A-Guide-to-Responsive-Web-Design-Best-Practices.jpg",
+        "blogImage": "https://example.com/blogs/responsive_web_design.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Introduction to Machine Learning",
+        "author": "Alice Johnson",
+        "date": "2023-09-20",
+        "content": "Machine learning is a powerful tool that is transforming various industries by enabling computers to learn from data and make intelligent decisions. Understanding the basics of machine learning, including its key concepts, common algorithms, and applications, is essential for leveraging its potential to solve real-world problems.",
+        "tags": ["Machine Learning", "AI", "Data Science"],
+        "profileImage": "https://miro.medium.com/v2/resize:fit:1400/1*ikEB53J-pPJCXy1Ub1XUsQ.jpeg",
+        "blogImage": "https://example.com/blogs/machine_learning.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Top 10 Python Libraries for Data Science",
+        "author": "Bob Brown",
+        "date": "2023-09-15",
+        "content": "Python is a popular language for data science due to its simplicity and the availability of powerful libraries...",
+        "tags": ["Python", "Data Science", "Libraries"],
+        "profileImage": "https://miro.medium.com/v2/resize:fit:1400/1*PMvSWYzafqUVMsmQDsWEPA.png",
+        "blogImage": "https://example.com/blogs/python_libraries.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Understanding RESTful APIs",
+        "author": "Carol White",
+        "date": "2023-09-10",
+        "content": "RESTful APIs are a key component of modern web development...",
+        "tags": ["APIs", "REST", "Web Development"],
+        "profileImage": "https://images.ctfassets.net/vwq10xzbe6iz/5sBH4Agl614xM7exeLsTo7/9e84dce01735f155911e611c42c9793f/rest-api.png",
+        "blogImage": "https://example.com/blogs/restful_apis.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Getting Started with React",
+        "author": "David Green",
+        "date": "2023-09-05",
+        "content": "React is a popular JavaScript library for building user interfaces...",
+        "tags": ["React", "JavaScript", "Web Development"],
+        "profileImage": "https://kinsta.com/wp-content/uploads/2023/04/react-must-be-in-scope-when-using-jsx-1536x768.jpg",
+        "blogImage": "https://example.com/blogs/getting_started_react.jpg"
+    },
+    {
+        "id": 7,
+        "title": "An Introduction to Docker",
+        "author": "Eve Black",
+        "date": "2023-09-01",
+        "content": "Docker is a tool designed to make it easier to create, deploy, and run applications by using containers...",
+        "tags": ["Docker", "DevOps", "Containers"],
+        "profileImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7UmMNSm08FIquxL4m_XEy0iN9iVvIrZMrgA&s",
+        "blogImage": "https://example.com/blogs/introduction_docker.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Building REST APIs with Node.js",
+        "author": "Frank Blue",
+        "date": "2023-08-25",
+        "content": "Node.js is a powerful platform for building REST APIs...",
+        "tags": ["Node.js", "APIs", "JavaScript"],
+        "profileImage": "https://bs-uploads.toptal.io/blackfish-uploads/components/open_graph_image/8960807/og_image/optimized/secure-rest-api-in-nodejs-18f43b3033c239da5d2525cfd9fdc98f.png",
+        "blogImage": "https://example.com/blogs/building_rest_apis_nodejs.jpg"
+    },
+    {
+        "id": 9,
+        "title": "Understanding Asynchronous Programming in JavaScript",
+        "author": "Grace Yellow",
+        "date": "2023-08-20",
+        "content": "Asynchronous programming is a key feature of JavaScript that allows for non-blocking operations...",
+        "tags": ["JavaScript", "Asynchronous", "Programming"],
+        "profileImage": "https://miro.medium.com/v2/resize:fit:654/1*67SVB5_6b0VCMMFZs23mWg.png",
+        "blogImage": "https://example.com/blogs/async_programming_js.jpg"
+    },
+    {
+        "id": 10,
+        "title": "A Beginner's Guide to Kubernetes",
+        "author": "Henry Purple",
+        "date": "2023-08-15",
+        "content": "Kubernetes is an open-source platform designed to automate deploying, scaling, and operating application containers...",
+        "tags": ["Kubernetes", "DevOps", "Containers"],
+        "profileImage": "https://cdn.yourcomputer.in/wp-content/uploads/2024/08/kubernetes-flow-1024x585.webp",
+        "blogImage": "https://example.com/blogs/beginners_guide_kubernetes.jpg"
+    }
+]
