@@ -56,7 +56,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
     try {
       const db = await connectToDatabase();
-      const collection = db.collection('users'); // Adjust collection name if needed
+      const collection = db.db().collection('users'); // Adjust collection name if needed
 
       // Check if the user with the given email already exists
       const existingUser = await collection.findOne({ email });

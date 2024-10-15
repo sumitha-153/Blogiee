@@ -81,7 +81,8 @@ const blogs: Blog[] = [
   if (req.method === 'GET') {
     try {
       const db = await connectToDatabase();
-      const blogs = await db.collection('blogs').find().toArray();
+      const database = db.db('BlogApplication'); // Replace 'yourDatabaseName' with the actual database name
+      const blogs = await database.collection('blogs').find().toArray();
       res.status(200).json(blogs);
     } catch (error) {
       console.error('Error fetching blogs from database:', error);
@@ -138,7 +139,8 @@ const blogs: Blog[] = [
       
 
       const db = await connectToDatabase();
-      const result = await db.collection('blogs').insertOne(newBlog);
+      const database = db.db('BlogApplication'); // Replace 'BlogApplication' with your actual database name
+      const result = await database.collection('blogs').insertOne(newBlog);
       console.log(result);
       
 

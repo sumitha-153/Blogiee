@@ -85,7 +85,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             const db = await connectToDatabase();
 
             // Check if user already exists
-            const existingUser = await db.collection('users').findOne({ email });
+            const database = db.db(); // Access the database
+            const existingUser = await database.collection('users').findOne({ email });
             if (existingUser) {
                 return res.status(400).json({ error: 'User already exists' });
             }
@@ -93,8 +94,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             // Hash the password
             // const hashedPassword = await bcrypt.hash(password, 10);
 
-            // Create new user
-            await db.collection('users').insertOne({
+            await database.collection('users').insertOne({
                 email,
                 password,
             });
