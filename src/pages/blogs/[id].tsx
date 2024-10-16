@@ -56,7 +56,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   }
 };
 
-// export default BlogDetails;
+export default BlogDetails;
 
 
 // import React from 'react';
