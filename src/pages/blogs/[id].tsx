@@ -61,6 +61,8 @@
 import React from 'react';
 import { GetServerSideProps } from 'next';
 import styles from './blog.module.css';
+import Navbar from '../navbar/Navbar'
+import Footer from '../footer/footer
 import Image from 'next/image';
 
 interface Blog {
