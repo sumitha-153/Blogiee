@@ -1,7 +1,7 @@
 
 import { MongoClient } from 'mongodb';
 
-const uri = 'mongodb://localhost:27017'; // MongoDB URI
+const uri = 'mongodb+srv://sumitha:2003@blogie.5bh6n.mongodb.net/?retryWrites=true&w=majority&appName=blogie'; // MongoDB URI
 // const dbName = 'BlogApplication'; // Your database name
 
 let cachedClient: MongoClient | null = null;
