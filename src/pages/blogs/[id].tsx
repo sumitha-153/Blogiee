@@ -60,8 +60,6 @@
 
 import React from 'react';
 import { GetServerSideProps } from 'next';
-import Navbar from '../../components/navbar/Navbar';
-import Footer from '../../components/footer/footer';
 import styles from './blog.module.css';
 import Image from 'next/image';
 
