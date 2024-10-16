@@ -10,12 +10,14 @@ const ProtectedPage = () => {
     }
   }, [status]);
 
+  console.log('session:', session);
+  
   if (status === 'loading') {
     return <div>Loading...</div>;
   }
 
   if (status === 'authenticated') {
-    return <div>Welcome, {session?.user?.name}!</div>;
+    return <div>Welcome!</div>;
   }
 
   return null;
