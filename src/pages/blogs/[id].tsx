@@ -35,6 +35,7 @@ const BlogDetails = ({ blog }: { blog: Blog }) => {
   );
 };
 
+console.log(BlogDetails)
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const { id } = context.params as { id: string };
