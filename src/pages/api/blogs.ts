@@ -94,7 +94,7 @@ const blogs: Blog[] = [
 
     const form = formidable();
 
-    form.parse(req, async (err, fields, files) => {
+    form.parse(req, async (err: Error | null, fields: { title: string; author: string; date: string; content: string; tags: string; }, files: { profileImage: formidable.File[]; blogImage: formidable.File[]; }) => {
       if (err) {
         console.log('Error parsing form data:', err);
         return res.status(500).json({ error: 'Error parsing form data' });
@@ -124,19 +124,14 @@ const blogs: Blog[] = [
       
       const newBlog: Blog = {
         id: blogs.length + 1, // Assign a new id
-        title: Array.isArray(title) ? title[0] : title as string,
-        author: Array.isArray(author) ? author[0] : author as string,
-        date: Array.isArray(date) ? date[0] : date as string,
-        content: Array.isArray(content) ? content[0] : content as string,
-        tags: typeof tags === 'string' ? (tags as string).split(',').map(tag => tag.trim()) : [], // Convert comma-separated tags into an array
+        title: Array.isArray(title) ? title[0] : title,
+        author: Array.isArray(author) ? author[0] : author,
+        date: Array.isArray(date) ? date[0] : date,
+        content: Array.isArray(content) ? content[0] : content,
+        tags: Array.isArray(tags) ? tags : tags.split(',').map(tag => tag.trim()), // Convert comma-separated tags into an array
         profileImage: profileImagePath, // Save the file path or URL
         blogImage: blogImagePath,
-      };
-
-
-      console.log(newBlog);
-      console.log(newBlog.tags);
-      
+      };      
 
       const db = await connectToDatabase();
       const database = db.db('BlogApplication'); // Replace 'BlogApplication' with your actual database name
