@@ -13,7 +13,12 @@ export default NextAuth({
         email: { label: "Email", type: "text" },
         password: { label: "Password", type: "password" },
       },
-       authorize:aysnc(credentials) => {
+       // authorize:aysnc(credentials) => {
+       //  if (!credentials) {
+       //    return null;
+       //  }
+
+       async authorize(credentials) {
         if (!credentials) {
           return null;
         }
