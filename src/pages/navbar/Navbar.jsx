@@ -40,7 +40,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import AuthLinks from "../authlinks/AuthLinks";
+import AuthLinks from "../Authlinks/Authlinks";
 
 export default function Navbar({ children }) {
   return (
@@ -87,4 +87,4 @@ export default function Navbar({ children }) {
       <div>{children}</div>
     </>
   );
-}
+};

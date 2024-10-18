@@ -1,13 +1,12 @@
 
+
 import { NextApiRequest, NextApiResponse } from 'next';
-import { connectToDatabase } from '../../../utils/mongodb'; // Adjust path if needed
-// import bcrypt from 'bcrypt'; // Optional: if you want to handle encrypted passwords
+import { connectToDatabase } from '../../../utils/mongodb';
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === 'POST') {
     const { email, password } = req.body;
     console.log(email, password);
-    
 
     if (!email || !password) {
       return res.status(400).json({ error: 'Email and password are required' });
@@ -15,16 +14,14 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
     try {
       const db = await connectToDatabase();
-      const collection = db.db('BlogApplication').collection('users'); // Adjust database and collection name if needed
+      const collection = db.db('BlogApplication').collection('users'); 
 
       // Check if the user with the given email exists
       const user = await collection.findOne({ email });
-      
+
       if (!user) {
         return res.status(404).json({ error: 'User does not exist. Please create an account.' });
       }
-
-      // User exists and password is correct, proceed to login
       return res.status(200).json({ message: 'Login successful' });
     } catch (error) {
       console.error(error);
