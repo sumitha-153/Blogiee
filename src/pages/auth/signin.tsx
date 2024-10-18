@@ -16,7 +16,7 @@ export default function SignIn() {
     e.preventDefault();
 
     try {
-      const result = await signIn('credentials', {
+      const result = await signIn('logincredentials', {
         redirect: false,
         email,
         password,
