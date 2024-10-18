@@ -7,6 +7,7 @@ import { connectToDatabase } from "../../../utils/mongodb";
 export default NextAuth({
   providers: [
     CredentialsProvider({
+      id:"logincredentials",
       name: "Credentials",
       credentials: {
         email: { label: "Email", type: "text" },
